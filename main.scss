@@ -1,26 +1,58 @@
-
 $couleurPrimary: #9356dc;
 $couleurSecondary: #ff79da;
 $couleurtertiaire: #99e2d0;
 
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+ 
   text-decoration: none;
 }
-
-
-
 body {
-  background-color: rgb(180, 156, 156);
-
+  background-color: rgb(245, 245, 245);
   box-sizing: border-box;
 }
 
-.h1 {
-  font-weight: bold;
-  border: rebeccapurple solid 4px;
-  background-color: rgb(233, 178, 178);
-  font-size: 40px;
+// **************************************
+// Layout GRID
+// *************************************
+container {
+
+display: grid;
+grid-template-columns: repeat(5,1fr);
+grid-template-rows: repeat(4,minmax(210px auto));
+grid-template-areas: 
+"a a a a a "
+"a a a a a"
+"b b b b b"
+"c c c c c"
+"d d d d d"
+"e e e e e";
+    gap: 10px;
+    height: 100vh;
+    font-size: 35px;
+}
+
+
+
+
+.header{
+    background-color: lightgreen;
+    grid-area: a;
+}
+.home {
+  background-color: grey;
+  grid-area:b;
+  
+}
+.feature {
+  background-color: hotpink;
+  grid-area: c;
+}
+.section{
+    background-color: indianred;
+    grid-area: d;
+}
+.footer{
+    background-color: khaki;
+    grid-area: e;
 }
