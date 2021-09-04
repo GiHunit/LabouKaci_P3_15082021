@@ -1,0 +1,13 @@
+body {
+  background-color: #b49c9c;
+  box-sizing: border-box;
+}
+
+.h1 {
+  font-weight: bold;
+  border: rebeccapurple solid 4px;
+  background-color: #e9b2b2;
+  font-size: 40px;
+}
+
+/*# sourceMappingURL=style.css.map */
