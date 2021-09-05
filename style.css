@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   text-decoration: none;
 }
 
@@ -116,12 +118,40 @@ hr {
 }
 
 .section {
-  background-color: indianred;
+  background-color: #f6f6f6;
   grid-area: d;
+}
+.section .restaurant {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section .restaurant .carte {
+  background-color: #f6f6f6;
+  margin-bottom: 16px;
+  width: 350px;
+  border-radius: 10px 10px 0 0;
+  box-shadow: rgba(0, 0, 0, 0.445) 2px 2px 15px 2px;
+}
+.section .restaurant .carte__photo img {
+  border-radius: 15px 15px 0 0;
+  width: 100%;
+  object-fit: cover;
+  height: 170px;
+}
+.section .restaurant .carte__name {
+  margin-left: 15px;
+  font-weight: bold;
+  font-size: 28px;
+  margin-top: 15px;
+}
+.section .restaurant .carte__city {
+  margin-left: 15px;
+  font-size: 18px;
+  margin-bottom: 25px;
 }
 
 .footer {
-  background-color: khaki;
   grid-area: e;
 }
 

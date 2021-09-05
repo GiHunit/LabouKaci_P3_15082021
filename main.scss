@@ -4,7 +4,8 @@ $couleurtertiaire: #99e2d0;
 
 * {
   box-sizing: border-box;
-
+margin: 0;
+padding: 0;
   text-decoration: none;
 }
 body {
@@ -97,7 +98,7 @@ hr {
 
 .feature {
   background-color: rgba(255, 255, 255, 0.39);
-  
+
   grid-area: c;
   .fcontain {
     display: flex;
@@ -105,12 +106,12 @@ hr {
     align-items: center;
     .feat {
       display: flex;
-    justify-content: start;
-    align-items: center;
-     
-     box-shadow:  5px 5px 15px 5px #0000001a;
-     
-      padding: 10px ;
+      justify-content: start;
+      align-items: center;
+
+      box-shadow: 5px 5px 15px 5px #0000001a;
+
+      padding: 10px;
       border-radius: 20px;
       width: 328px;
 
@@ -126,24 +127,56 @@ hr {
         font-size: 19px;
         transform: translate(-25px, 0px);
       }
-      &__logo{
+      &__logo {
         font-size: 19px;
-       
       }
       &__text {
         font-size: 17px;
-       
-        
+      }
+    }
+  }
+}
+// ********************************************************************************
+// RESTAURANT & carte
+// *********************************************************************************
+.section {
+  background-color:#f6f6f6;
+  grid-area: d;
+
+  .restaurant {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .carte {
+      
+      background-color:#f6f6f6;
+      margin-bottom:16px;
+      width: 350px;
+      border-radius: 10px 10px 0 0 ;
+      box-shadow: rgba(0, 0, 0, 0.445) 2px 2px 15px 2px;
+      
+      &__photo img {
+        border-radius: 15px 15px 0 0;
+        width: 100%;
+        object-fit: cover;
+        height: 170px;
+      }
+      &__name{
+        margin-left: 15px;
+        font-weight: bold;
+        font-size: 28px;
+        margin-top: 15px;
+      }
+      &__city{
+        margin-left: 15px;
+        font-size: 18px;
+        margin-bottom: 25px;
       }
     }
   }
 }
 
-.section {
-  background-color: indianred;
-  grid-area: d;
-}
 .footer {
-  background-color: khaki;
+
   grid-area: e;
 }
