@@ -4,8 +4,8 @@ $couleurtertiaire: #99e2d0;
 
 * {
   box-sizing: border-box;
-margin: 0;
-padding: 0;
+  margin: 0;
+  padding: 0;
   text-decoration: none;
 }
 body {
@@ -108,7 +108,7 @@ hr {
       display: flex;
       justify-content: start;
       align-items: center;
-margin-bottom: 15px;
+      margin-bottom: 15px;
       box-shadow: 5px 5px 15px 5px #0000001a;
 
       padding: 10px;
@@ -140,7 +140,7 @@ margin-bottom: 15px;
 // RESTAURANT & carte
 // *********************************************************************************
 .section {
-  background-color:#f6f6f6;
+  background-color: #f6f6f6;
   grid-area: d;
 
   .restaurant {
@@ -148,26 +148,25 @@ margin-bottom: 15px;
     flex-direction: column;
     align-items: center;
     .carte {
-      
-      background-color:#f6f6f6;
-      margin-bottom:16px;
+      background-color: #f6f6f6;
+      margin-bottom: 16px;
       width: 350px;
-      border-radius: 10px 10px 0 0 ;
+      border-radius: 10px 10px 0 0;
       box-shadow: rgba(0, 0, 0, 0.445) 2px 2px 15px 2px;
-      
+
       &__photo img {
         border-radius: 15px 15px 0 0;
         width: 100%;
         object-fit: cover;
         height: 170px;
       }
-      &__name{
+      &__name {
         margin-left: 15px;
         font-weight: bold;
         font-size: 28px;
         margin-top: 15px;
       }
-      &__city{
+      &__city {
         margin-left: 15px;
         font-size: 18px;
         margin-bottom: 25px;
@@ -179,18 +178,58 @@ margin-bottom: 15px;
 // FOOTER
 // *********************************************************
 
-
-.footer{
+.footer {
   font-size: 50%;
   grid-area: e;
-background-color: grey;
-.info__logo img{
-  width: 150px;
+  background-color: grey;
+  .info__logo img {
+    width: 150px;
+  }
+  ul {
+    display: flex;
+    margin-left: 15px;
+  }
 }
-ul{
+
+// *******************************************************************
+// ******************************************************************
+// page 2
+// ******************************************************************
+// *******************************************************************
+.label{
   display: flex;
-  margin-left: 15px;
+ justify-content: center;
+}
+.label img {
+  font-size: 25px;
+  width: 200px;
+  background-image: cover;
+  background-position: bottom;
+}
+.alacarte{
+border: solid gold 4px;
+width: 100%;
+
+}
+.alacarte img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+ 
 }
 
+.alacarte__name {
+  border: rgba(0, 0, 0, 0) solid 2px;
+  padding: 25px;
+  position: relative;
+  color: black;
+  background-color: white;
+  top:-20px;
+  border-radius: 25px 25px 0 0;
+  font-size: 1rem;
+  font-style: italic;
 
+text-align: center;
+  font-weight: bold;
 }
+
