@@ -108,7 +108,7 @@ hr {
       display: flex;
       justify-content: start;
       align-items: center;
-
+margin-bottom: 15px;
       box-shadow: 5px 5px 15px 5px #0000001a;
 
       padding: 10px;
@@ -175,8 +175,22 @@ hr {
     }
   }
 }
+// ************************************************************
+// FOOTER
+// *********************************************************
 
-.footer {
 
+.footer{
+  font-size: 50%;
   grid-area: e;
+background-color: grey;
+.info__logo img{
+  width: 150px;
+}
+ul{
+  display: flex;
+  margin-left: 15px;
+}
+
+
 }
