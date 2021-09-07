@@ -178,7 +178,6 @@ hr {
 }
 
 .alacarte {
-  border: solid gold 4px;
   width: 100%;
 }
 
@@ -205,6 +204,7 @@ hr {
 .direction__column {
   display: flex;
   flex-direction: column;
+  background-color: #f6f6f6;
 }
 
 .plats__intro {
@@ -215,14 +215,16 @@ ul {
   /*  PROBLEME SELECTEUR */
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
 }
 
 .menu {
-  border: #959597 solid 2px;
+  border: rgba(238, 235, 235, 0.774) solid 4px;
+  box-shadow: #f6f6f6 15px 15px;
   border-radius: 18px;
   padding: 10px;
   width: 340px;
+  margin: 10px;
 }
 .menu__name {
   font-weight: bold;

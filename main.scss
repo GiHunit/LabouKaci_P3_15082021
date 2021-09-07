@@ -207,7 +207,7 @@ hr {
   background-position: bottom;
 }
 .alacarte{
-border: solid gold 4px;
+
 width: 100%;
 
 }
@@ -238,6 +238,7 @@ text-align: center;
 
   display: flex;
   flex-direction: column;
+  background-color: #f6f6f6;
 }
 .plats__intro{
   margin: 15px;
@@ -245,14 +246,18 @@ text-align: center;
 ul{  /*  PROBLEME SELECTEUR */
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
+ 
+  
 }
 .menu{
   
-  border: rgb(149, 149, 151) solid 2px;
+  border: rgba(238, 235, 235, 0.774) solid 4px;
+  box-shadow: #f6f6f6 15px 15px;
   border-radius: 18px;
   padding: 10px;
   width: 340px;
+  margin: 10px;
   &__name{
     font-weight: bold;
     font-size: 20px;
