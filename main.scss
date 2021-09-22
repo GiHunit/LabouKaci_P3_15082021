@@ -2,16 +2,15 @@ $couleurPrimary: #9356dc;
 $couleurSecondary: #ff79da;
 $couleurtertiaire: #99e2d0;
 
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   text-decoration: none;
   list-style-type: none;
+  font-family: roboto;
 }
 body {
- 
   background-color: rgb(250, 253, 249);
   box-sizing: border-box;
 }
@@ -20,7 +19,7 @@ body {
 // *************************************
 container {
   display: grid;
-  grid-template-columns:  1fr;
+  grid-template-columns: 1fr;
   grid-template-rows: repeat(4, minmax(210px auto));
   grid-template-areas:
     "a "
@@ -31,7 +30,6 @@ container {
     "e ";
   gap: 10px;
   height: 100vh;
-  
 }
 hr {
   height: 10px;
@@ -74,7 +72,7 @@ hr {
   align-content: center;
 
   &__h1 {
-    font-size: 24px;
+    font-size: 18px;
     text-align: center;
   }
   &__clickbalt {
@@ -90,7 +88,7 @@ hr {
     border-radius: 35px;
     padding: 15px;
     text-align: center;
-    border:none;  
+    border: none;
   }
 }
 
@@ -119,7 +117,7 @@ hr {
 
       &__rank {
         position: relative;
-        color:white;
+        color: white;
         width: 30px;
         height: 30px;
         background-color: $couleurPrimary;
@@ -145,10 +143,6 @@ hr {
   background-color: #f6f6f6;
   grid-area: d;
 
-
-
-
-  
   .restaurant {
     display: flex;
     flex-direction: column;
@@ -183,85 +177,37 @@ hr {
 }
 
 // ****************************
-// position rel /abs img 
+// position rel /abs img
 // ****************************
-.nouveau{
-
+.nouveau {
   background-color: #99e2d0;
-border: none;
-font-size: 18px;
-padding: 12px;
-position: relative;
-top:15px;
-left:245px;
-
+  border: none;
+  font-size: 18px;
+  padding: 12px;
+  position: relative;
+  top: 15px;
+  left: 245px;
 }
 // ************************************************************
 // FOOTER
 // *********************************************************
 
-.footer {
-  font-size: 24px;
-  grid-area: e;
-  background-color: grey;
+// .footer {
  
-  
-  .info__logo img {
-    margin-left: 10px;
-    font-weight: italic;
-    width: 150px;
-  }
-  ul {
-    display: flex;
-    flex-direction: column;
-
-   justify-items: start;
-  }
-}
-.info__affaire{
+// }
+.footer__contenu{
+  width: 100%;
   display: flex;
-  align-content: flex-start;
+  background-color: gray;
 }
-.footer_proposer{
-  display:flex;
-justify-content: flex-start;
-
-  color:blue;
-  margin: 15px;
-  & .test1{
-    margin-right: 35px;
-  }
-
+li a{ 
+  border: #99e2d0 2px solid;
+  display: flex;
 }
-// .item1{
-//   margin-left:25px;
-// }
-// .item1 li{
-  
-//   display: flex;
-//   flex-direction: row;
-  
-// }
+.footer__offre a:nth-child{
+  margin-left: 45px;
+}
 
-// .item2 li{
- 
-//   display: flex;
-// }
-// .info__affaire{
-//   display: flex;
-//   align-items: flex-start;
-//   margin-left: 10px;
-// }
-
-// .info__com{
-//   font-weight: bold;
-//   display: flex;
-//   align-items: flex-start;
-//   margin-left: 10px;
-// }
-// .test{
-//   margin-left: 15px;
-// }
 
 // *******************************************************************
 // ******************************************************************
@@ -290,17 +236,17 @@ justify-content: flex-start;
 .alacarte__name {
   border: rgba(0, 0, 0, 0) solid 2px;
   padding: 25px;
-  
+
   position: relative;
   color: black;
   background-color: white;
   top: -20px;
   border-radius: 25px 25px 0 0;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-style: italic;
-font-size:21px;
-font-family: roberto;
-  text-align: center;
+
+  font-family: shrikhand;
+
   font-weight: bold;
 }
 
@@ -313,13 +259,7 @@ font-family: roberto;
 .plats__intro {
   margin: 15px;
 }
-ul {
-  /*  PROBLEME SELECTEUR */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: rgb(14, 14, 14);
-}
+
 .menu {
   border: rgba(238, 235, 235, 0.774) solid 4px;
   box-shadow: #f6f6f6 15px 15px;
@@ -333,15 +273,14 @@ ul {
   }
 }
 
-.menu__valid{
-border:solid rgb(7, 108, 175) 2px;
-width: 200px;
-height: 50px;
-background-color: rgb(9, 143, 177);
+.menu__valid {
+  border: solid rgb(7, 108, 175) 2px;
+  width: 200px;
+  height: 50px;
+  background-color: rgb(9, 143, 177);
 }
 
-.menu__animation{
-  border:solid red 2px;
+.menu__animation {
+  border: solid red 2px;
   display: flex;
-  
 }

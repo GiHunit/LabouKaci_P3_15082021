@@ -4,6 +4,7 @@
   padding: 0;
   text-decoration: none;
   list-style-type: none;
+  font-family: roboto;
 }
 
 body {
@@ -61,7 +62,7 @@ hr {
   align-content: center;
 }
 .home__h1 {
-  font-size: 24px;
+  font-size: 18px;
   text-align: center;
 }
 .home__clickbalt {
@@ -162,35 +163,19 @@ hr {
   left: 245px;
 }
 
-.footer {
-  font-size: 24px;
-  grid-area: e;
-  background-color: grey;
-}
-.footer .info__logo img {
-  margin-left: 10px;
-  font-weight: italic;
-  width: 150px;
-}
-.footer ul {
+.footer__contenu {
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  justify-items: start;
+  background-color: gray;
 }
 
-.info__affaire {
+li a {
+  border: #99e2d0 2px solid;
   display: flex;
-  align-content: flex-start;
 }
 
-.footer_proposer {
-  display: flex;
-  justify-content: flex-start;
-  color: blue;
-  margin: 15px;
-}
-.footer_proposer .test1 {
-  margin-right: 35px;
+.footer__offre a:nth-child {
+  margin-left: 45px;
 }
 
 .label {
@@ -223,11 +208,9 @@ hr {
   background-color: white;
   top: -20px;
   border-radius: 25px 25px 0 0;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-style: italic;
-  font-size: 21px;
-  font-family: roberto;
-  text-align: center;
+  font-family: shrikhand;
   font-weight: bold;
 }
 
@@ -239,14 +222,6 @@ hr {
 
 .plats__intro {
   margin: 15px;
-}
-
-ul {
-  /*  PROBLEME SELECTEUR */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #0e0e0e;
 }
 
 .menu {
@@ -274,4 +249,4 @@ ul {
   display: flex;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main.css.map */
