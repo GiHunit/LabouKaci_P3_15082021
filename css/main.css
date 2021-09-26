@@ -1,15 +1,65 @@
+.sectionloader {
+  background-color: green;
+  text-align: center;
+  line-height: 500px;
+  height: 500px;
+  color: white;
+  font-size: 30px;
+}
+
+.loader {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  position: relative;
+}
+
+.loader-quart {
+  position: relative;
+  vertical-align: middle;
+  border-radius: 50px;
+  border: solid rgba(90, 34, 12, 0.562) 6px;
+}
+
+.loader-quart:after {
+  content: "";
+  position: absolute;
+  border-top: solid transparent 6px;
+  top: -6px;
+  left: -6px;
+  right: -6px;
+  bottom: -6px;
+  border-radius: 50px;
+  border: 6px solid transparent;
+  border-top-color: crimson;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   text-decoration: none;
   list-style-type: none;
-  font-family: roboto;
 }
 
 body {
   background-color: #fafdf9;
   box-sizing: border-box;
+}
+
+h1 {
+  border: solid red 6px;
+  text-align: center;
+  font-family: "shrikhand";
 }
 
 container {
@@ -62,7 +112,6 @@ hr {
   align-content: center;
 }
 .home__h1 {
-  font-size: 18px;
   text-align: center;
 }
 .home__clickbalt {
@@ -166,12 +215,28 @@ hr {
 .footer__contenu {
   width: 100%;
   display: flex;
-  background-color: gray;
+  flex-direction: column;
+  background-color: #353535;
+}
+
+.footer__logo {
+  padding-bottom: 15px;
+  margin-left: 27px;
+}
+
+.footer__logo img {
+  width: 135px;
 }
 
 li a {
-  border: #99e2d0 2px solid;
+  padding-bottom: 7px;
+  color: white;
+  margin-left: 28px;
   display: flex;
+}
+
+.fas {
+  margin-right: 10px;
 }
 
 .footer__offre a:nth-child {
@@ -201,17 +266,13 @@ li a {
 }
 
 .alacarte__name {
-  border: rgba(0, 0, 0, 0) solid 2px;
+  border: #17d677 solid 2px;
   padding: 25px;
   position: relative;
   color: black;
   background-color: white;
   top: -20px;
   border-radius: 25px 25px 0 0;
-  font-size: 1.5rem;
-  font-style: italic;
-  font-family: shrikhand;
-  font-weight: bold;
 }
 
 .direction__column {
