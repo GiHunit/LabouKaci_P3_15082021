@@ -1,46 +1,21 @@
 .sectionloader {
-  background-color: green;
-  text-align: center;
-  line-height: 500px;
-  height: 500px;
-  color: white;
-  font-size: 30px;
+  position: fixed;
+  background: #9356dc;
+  background: linear-gradient(286deg, #9356dc 0%, #ff79da 51%, #99e2d0 99%);
+  height: 100vh;
+  width: 100vh;
+  z-index: 1;
+  animation: pagetransition 5s forwards;
 }
 
-.loader {
-  width: 50px;
-  height: 50px;
-  display: inline-block;
-  position: relative;
-}
-
-.loader-quart {
-  position: relative;
-  vertical-align: middle;
-  border-radius: 50px;
-  border: solid rgba(90, 34, 12, 0.562) 6px;
-}
-
-.loader-quart:after {
-  content: "";
-  position: absolute;
-  border-top: solid transparent 6px;
-  top: -6px;
-  left: -6px;
-  right: -6px;
-  bottom: -6px;
-  border-radius: 50px;
-  border: 6px solid transparent;
-  border-top-color: crimson;
-  animation: spin 1s linear infinite;
-}
-
-@keyframes spin {
+@keyframes pagetransition {
   0% {
-    transform: rotate(0deg);
+    opacity: 1;
   }
   100% {
-    transform: rotate(360deg);
+    opacity: 0;
+    z-index: -1;
+    display: none;
   }
 }
 * {
@@ -57,8 +32,6 @@ body {
 }
 
 h1 {
-  border: solid red 6px;
-  text-align: center;
   font-family: "shrikhand";
 }
 
@@ -210,6 +183,16 @@ hr {
   position: relative;
   top: 15px;
   left: 245px;
+}
+
+.carte__favorit {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 50px;
+}
+
+.carte__favorite i {
+  color: green;
 }
 
 .footer__contenu {

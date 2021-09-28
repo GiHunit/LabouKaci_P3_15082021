@@ -1,89 +1,43 @@
-@import '_mixins.scss';
-
-
+@import "_mixins.scss";
 
 $couleurPrimary: #9356dc;
 $couleurSecondary: #ff79da;
 $couleurtertiaire: #99e2d0;
 
-
-
-
-
-
-
-
-
 .sectionloader{
-  background-color: green;
-  text-align: center;
-  line-height: 500px;
-  height: 500px;
-  color:white;
-  font-size: 30px;
-}
-.loader{
-  width:50px;
-  height: 50px;
-  display:inline-block;
-  position: relative;
+position: fixed;
+background: rgb(147,86,220);
+background: linear-gradient(286deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 51%, rgba(153,226,208,1) 99%);
+height: 100vh;
+width: 100vh;
+z-index: 1;
+  animation: pagetransition 5s forwards;
 
 }
-.loader-quart{
-  position: relative;
-vertical-align: middle;
-  border-radius: 50px;
-  border:solid rgba(90, 34, 12, 0.562) 6px;
+@keyframes pagetransition {
+  0%{opacity: 1;}
+  100%{opacity: 0;
+    z-index: -1;
+  display: none;}
+  
 }
-
-.loader-quart:after{
-  content:"";
-  position:absolute;
-
-  border-top:solid transparent 6px;
-  top:-6px; 
-  left:-6px;
-  right: -6px;
-  bottom: -6px;
-border-radius: 50px;
-border:6px solid transparent;
-border-top-color: crimson;
-animation: spin  1s linear infinite;
-}
-
-
-@keyframes spin{
-  0% {transform:rotate(0deg);}
-100%{transform:rotate(360deg);}
-}
-
 
 * {
-  
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   text-decoration: none;
   list-style-type: none;
-}  
-
-
-
-
-
+}
 
 body {
   background-color: rgb(250, 253, 249);
   box-sizing: border-box;
-  
 }
 h1 {
   @include border;
-  font-family: 'shrikhand';
+  font-family: "shrikhand";
 }
-
-
-
 
 // **************************************
 // Layout GRID
@@ -143,7 +97,6 @@ hr {
   align-content: center;
 
   &__h1 {
-   
     text-align: center;
   }
   &__clickbalt {
@@ -259,6 +212,20 @@ hr {
   top: 15px;
   left: 245px;
 }
+// FAVORITE HEART ICON
+.carte__favorit{
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 50px;
+ 
+}
+.carte__favorite i{
+  color:green;
+  
+  
+}
+
+
 // ************************************************************
 // FOOTER
 // *********************************************************
@@ -269,28 +236,26 @@ hr {
 .footer__contenu {
   width: 100%;
   display: flex;
-flex-direction: column;
-    background-color: #353535;
-
+  flex-direction: column;
+  background-color: #353535;
 }
-.footer__logo{
-  padding-bottom:15px;
+.footer__logo {
+  padding-bottom: 15px;
   margin-left: 27px;
 }
-.footer__logo img{
-
-
+.footer__logo img {
   width: 135px;
 }
 li a {
- padding-bottom: 7px;
-color: white;
-margin-left:28px;
-display: flex;
+  padding-bottom: 7px;
+  color: white;
+  margin-left: 28px;
+  display: flex;
 }
 
-.fas {margin-right: 10px;}
-
+.fas {
+  margin-right: 10px;
+}
 
 .footer__offre a:nth-child {
   margin-left: 45px;
