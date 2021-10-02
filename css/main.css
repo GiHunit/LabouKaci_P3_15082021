@@ -29,6 +29,7 @@
 body {
   background-color: #fafdf9;
   box-sizing: border-box;
+  font-family: "roboto";
 }
 
 h1 {
@@ -154,7 +155,7 @@ hr {
   background-color: #f6f6f6;
   margin-bottom: 16px;
   width: 350px;
-  border-radius: 10px 10px 0 0;
+  border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.445) 2px 2px 15px 2px;
 }
 .section .restaurant .carte__photo img {
@@ -178,17 +179,24 @@ hr {
 .nouveau {
   background-color: #99e2d0;
   border: none;
-  font-size: 18px;
-  padding: 12px;
-  position: relative;
-  top: 15px;
-  left: 245px;
+  font-size: 14px;
+  padding: 6px;
+  margin-top: 15px;
+  position: absolute;
+  right: 52px;
+}
+
+.carte__header {
+  border: solid green 2px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .carte__favorit {
+  font-size: 30px;
   display: flex;
-  justify-content: flex-end;
-  margin-left: 50px;
+  align-self: center;
 }
 
 .carte__favorite i {
@@ -291,6 +299,17 @@ li a {
 .menu__animation {
   border: solid red 2px;
   display: flex;
+}
+
+.commander {
+  background: linear-gradient(#ff79da, #9356dc);
+  color: white;
+  border-radius: 35px;
+  padding: 10px;
+  text-align: center;
+  border: none;
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=main.css.map */
