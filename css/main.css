@@ -70,13 +70,19 @@ hr {
   background-color: #fafcfb;
 }
 .geo__icon {
-  color: black;
+  color: #050505;
   display: flex;
   align-items: center;
-  font-size: 20px;
+  font-size: 10px;
 }
 .geo__city input {
   border: transparent;
+}
+
+input::placeholder, :-ms-input-placeholder {
+  font-weight: bold;
+  color: black;
+  font-family: "roboto";
 }
 
 .home {
