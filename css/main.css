@@ -283,16 +283,14 @@ li a {
 }
 
 .menu {
-  border: rgba(238, 235, 235, 0.774) solid 4px;
+  border: rgba(201, 11, 11, 0.774) solid 4px;
   box-shadow: #f6f6f6 15px 15px;
   border-radius: 18px;
   padding: 10px;
-  width: 340px;
+  max-width: 440px;
   margin: 10px;
-}
-.menu__name {
-  font-weight: bold;
-  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .menu__valid {
@@ -300,11 +298,34 @@ li a {
   width: 200px;
   height: 50px;
   background-color: #098fb1;
+  overflow: hidden;
 }
 
 .menu__animation {
   border: solid red 2px;
   display: flex;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.menu__group {
+  border: solid #69690b 4px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.menu__name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.menu__subname {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .commander {
