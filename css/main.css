@@ -37,7 +37,7 @@ body {
 }
 
 .background__second {
-  background: purple;
+  background: #f6f6f6f6;
 }
 
 h1 {
@@ -157,7 +157,6 @@ input::placeholder, :-ms-input-placeholder {
 }
 
 .section {
-  background-color: #f6f6f6;
   grid-area: d;
 }
 .section .restaurant {
@@ -166,7 +165,7 @@ input::placeholder, :-ms-input-placeholder {
   align-items: center;
 }
 .section .restaurant .carte {
-  background-color: #f6f6f6;
+  background-color: white;
   margin-bottom: 16px;
   width: 350px;
   border-radius: 15px;
