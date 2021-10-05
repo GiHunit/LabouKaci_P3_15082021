@@ -38,10 +38,18 @@ $couleurtertiaire: #99e2d0;
 }
 
 body {
-  background-color: rgb(250, 253, 249);
+  background:#f6f6f6;
+  
   box-sizing: border-box;
   font-family: 'roboto';
 }
+.background__princial{
+  background: green;
+}
+.background__second{
+  background: purple;
+}
+
 h1 {
   @include border;
   font-family: "shrikhand";
@@ -314,7 +322,6 @@ li a {
 .direction__column {
   display: flex;
   flex-direction: column;
-  background-color: #f6f6f6;
 }
 .plats__intro {
   margin: 15px;

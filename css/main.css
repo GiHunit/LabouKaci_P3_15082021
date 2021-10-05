@@ -27,9 +27,17 @@
 }
 
 body {
-  background-color: #fafdf9;
+  background: #f6f6f6;
   box-sizing: border-box;
   font-family: "roboto";
+}
+
+.background__princial {
+  background: green;
+}
+
+.background__second {
+  background: purple;
 }
 
 h1 {
@@ -275,7 +283,6 @@ li a {
 .direction__column {
   display: flex;
   flex-direction: column;
-  background-color: #f6f6f6;
 }
 
 .plats__intro {
