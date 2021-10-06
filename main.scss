@@ -73,10 +73,12 @@ container {
   gap: 10px;
   height: 100vh;
 }
+// Ligne sous logo
 hr {
-  height: 10px;
+  height: 7px;
   border: 0;
   box-shadow: 0 10px 10px -10px #7a7373 inset;
+  z-index: 2;
 }
 .header {
   grid-area: a;
@@ -87,31 +89,44 @@ hr {
     margin-top: 20px;
   }
   &__logo img {
-    width: 200px;
+    width: 160px;
     height: auto;
   }
 }
+
+// Barre de recherche 
+
 .geo {
   display: flex;
   justify-content: center;
-  background-color: rgb(250, 252, 251);
-
+   background-color:#eaeaea;
+  padding:12px;
+  
   &__icon {
     color: rgb(5, 5, 5);
     display: flex;
     align-items: center;
-    font-size: 10px;
+    font-size: 18px;
   }
   &__city input {
+    text-align:center ;
     border: transparent;
+    background-color:#eaeaea;
+    width: 110px;
+   
   }
 }
-input::placeholder, :-ms-input-placeholder{
-  font-weight: bold;
-  color:black;
+input::placeholder{
+  font-weight: bolder;
+  color: black;
   font-family: 'roboto';
+  font-size: 16px;
   
 }
+
+// Description du restaurant
+
+
 .home {
   background-color: #f6f6f6;
   grid-area: b;
@@ -331,31 +346,35 @@ li a {
 }
 .plats__intro {
   margin: 15px;
+  font-weight: 100;
 }
 
 .menu {
  
-  box-shadow: #000000 1px 1px 0 0;
+  box-shadow: #00000018 1px 1px 2px 0;
   border-radius: 18px;
-  padding: 10px;
+  padding: 0;
+  height: 70px;
   max-width: 440px;
   margin: 15px;
 
   display: flex;
   justify-content: space-between;
+  overflow: hidden;
+  
  }
 
-
+.menu:hover > .menu__valid{
+  margin-left:0;
+}
 
 .menu__valid {
   width: 50px;
-  height: 55px;
+  height: 70px;
   background-color: #99e2d0;
-  display: flex;
-  justify-content: stretch;
+  border-radius:  0 18px 18px 0;
   position: relative;
-  
- 
+   margin-left:-78px; 
 }
 
 .menu__animation {
@@ -367,17 +386,22 @@ li a {
 }
 
 .menu__group{
-  
+  padding:10px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 .menu__name{
+  font-weight: 620;
+  font-size: 21px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  line-height: 30px;
+  
 }
 .menu__subname{
+  font-weight: 150;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
