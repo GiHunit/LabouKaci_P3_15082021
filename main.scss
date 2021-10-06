@@ -39,7 +39,7 @@ $couleurtertiaire: #99e2d0;
 
 body {
   background:#f6f6f6;
-  
+
   box-sizing: border-box;
    font-family: 'roboto';
 }
@@ -52,7 +52,7 @@ body {
 
 h1 {
   @include border;
-  
+
    font-family: "shrikhand";
 }
 
@@ -94,15 +94,15 @@ hr {
   }
 }
 
-// Barre de recherche 
+// Barre de recherche
 
 .geo {
   display: flex;
   justify-content: center;
    background-color:#eaeaea;
    padding: 13px 52px 13px 26px;
-  
-  
+
+
   &__icon {
     color: rgb(5, 5, 5);
     display: flex;
@@ -114,7 +114,7 @@ hr {
     border: transparent;
     background-color:#eaeaea;
     width: 110px;
-   
+
   }
 }
 input::placeholder{
@@ -122,7 +122,7 @@ input::placeholder{
   color: black;
   font-family: 'roboto';
   font-size: 16px;
-  
+
 }
 
 // Description du restaurant
@@ -148,15 +148,18 @@ input::placeholder{
     margin-bottom: 15px;
   }
   &__btn button {
-    background: linear-gradient($couleurSecondary, $couleurPrimary);
+    
+background: linear-gradient(356deg, rgb(146, 86, 220) 3%, rgba(255,121,218,1) 80%);
+
     color: white;
     border-radius: 35px;
-    padding: 15px;
+
     text-align: center;
-    border: none;
-    font-size: 15px;
-    font-weight: 800;
     
+    border: none;
+    font-size: 14px;
+    padding:16px;
+
   }
 }
 
@@ -172,13 +175,14 @@ input::placeholder{
     display: flex;
     flex-direction: column;
     align-items: center;
+    color:red;
     .feat {
       display: flex;
       justify-content: start;
       align-items: center;
       margin-bottom: 15px;
       box-shadow: 5px 5px 15px 5px #0000001a;
-
+color:red;
       padding: 10px;
       border-radius: 20px;
       width: 328px;
@@ -331,7 +335,7 @@ li a {
 }
 
 .alacarte__name {
-  
+
   padding: 25px;
   position: relative;
   color: black;
@@ -351,7 +355,7 @@ li a {
 }
 
 .menu {
- 
+
   box-shadow: #00000018 1px 1px 2px 0;
   border-radius: 18px;
   padding: 0;
@@ -362,7 +366,7 @@ li a {
   display: flex;
   justify-content: space-between;
   overflow: hidden;
-  
+
  }
 
 .menu:hover > .menu__valid{
@@ -375,11 +379,11 @@ li a {
   background-color: #99e2d0;
   border-radius:  0 18px 18px 0;
   position: relative;
-   margin-left:-78px; 
+   margin-left:-78px;
 }
 
 .menu__animation {
- 
+
   display: flex;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -399,7 +403,7 @@ li a {
   text-overflow: ellipsis;
   white-space: nowrap;
   line-height: 30px;
-  
+
 }
 .menu__subname{
   font-weight: 150;
