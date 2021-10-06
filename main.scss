@@ -100,14 +100,14 @@ hr {
   display: flex;
   justify-content: center;
    background-color:#eaeaea;
-  padding:12px;
-  margin-right: 25px;
+   padding: 13px 52px 13px 26px;
+  
   
   &__icon {
     color: rgb(5, 5, 5);
     display: flex;
     align-items: center;
-    font-size: 17px;
+    font-size: 16px;
   }
   &__city input {
     text-align:center ;
@@ -118,7 +118,7 @@ hr {
   }
 }
 input::placeholder{
-  font-weight: 800;
+  font-weight: 600;
   color: black;
   font-family: 'roboto';
   font-size: 16px;
