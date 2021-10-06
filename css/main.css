@@ -84,7 +84,7 @@ hr {
   color: #050505;
   display: flex;
   align-items: center;
-  font-size: 18px;
+  font-size: 17px;
 }
 .geo__city input {
   text-align: center;
@@ -94,7 +94,7 @@ hr {
 }
 
 input::placeholder {
-  font-weight: bolder;
+  font-weight: 800;
   color: black;
   font-family: "roboto";
   font-size: 16px;
