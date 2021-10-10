@@ -49,11 +49,21 @@ body {
 // .background__second{
 //   background: #f6f6f6f6;
 // }
+.lien{
+  color:black;
+}
+.icontest {
+  fill:#9356dc;
+  stroke:black;
+  width: 50%;
+}
+
+
+
+
 
 h1 {
-  @include border;
-
-   font-family: "shrikhand";
+    font-family: "shrikhand";
 }
 
 // **************************************
@@ -252,7 +262,9 @@ background: linear-gradient(356deg, rgb(146, 86, 220) 3%, rgba(255,121,218,1) 80
     display: flex;
     flex-direction: column;
     align-items: center;
-    .carte {
+    
+
+   & .carte{
       background-color:white;
       margin-bottom: 16px;
       width: 350px;
@@ -264,6 +276,7 @@ background: linear-gradient(356deg, rgb(146, 86, 220) 3%, rgba(255,121,218,1) 80
         width: 100%;
         object-fit: cover;
         height: 170px;
+        
         // position: absolute;
       }
       &__name {
@@ -280,6 +293,53 @@ background: linear-gradient(356deg, rgb(146, 86, 220) 3%, rgba(255,121,218,1) 80
     }
   }
 }
+.carte1{
+ 
+  margin-bottom: 16px;
+  width: 350px;
+  border-radius: 15px;
+  border:solid 1px #d9dade;
+  box-shadow:
+  //  rgba(0, 0, 0, 0.445) 2px 2px 15px 2px;
+   9.91px 9.91px 15px #D9DADE,
+   -9.91px -9.91px 15px #FFFFFF;
+   background: linear-gradient(145deg, #e6e6e6, #ffffff);
+   
+}
+
+.carte1:hover{
+  box-shadow:
+  //  rgba(0, 0, 0, 0.445) 2px 2px 15px 2px;
+  inset 29.91px 9.91px 15px #D9DADE,
+  inset -9.91px -9.91px 15px #FFFFFF;
+  transform: translateY(0.25em);
+}
+
+
+
+.carte2{
+  background-color:white;
+  margin-bottom: 16px;
+  width: 350px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.445) 2px 2px 15px 2px;}
+.carte3{
+  
+  background-color:white;
+  margin-bottom: 16px;
+  width: 350px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.445) 2px 2px 15px 2px;
+}
+.carte4{
+ 
+  background-color:white;
+  margin-bottom: 16px;
+  width: 350px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.445) 2px 2px 15px 2px;
+}
+
 
 // ****************************
 // position rel /abs img
@@ -292,6 +352,7 @@ background: linear-gradient(356deg, rgb(146, 86, 220) 3%, rgba(255,121,218,1) 80
   margin-top:15px;
   position: absolute;
   right:52px;
+
 }
 // FAVORITE HEART ICON
 .carte__header {
@@ -307,6 +368,85 @@ background: linear-gradient(356deg, rgb(146, 86, 220) 3%, rgba(255,121,218,1) 80
 .carte__favorite i {
   color: green;
 }
+
+// ****************************************************** SVG HEART
+
+
+
+.iconsv {
+  fill: transparent;
+  margin-right:10px;
+  stroke:black;
+  stroke-width: 3;
+  cursor: pointer;
+  position: relative;
+}
+
+.iconsv svg {
+  outline: none;
+  overflow: visible;
+  width: 30px;
+}
+
+path {
+  stroke-dashoffset: 0;
+  stroke-dasharray: 1550;
+  /* transform-origin: center; */
+}
+
+.heart-background {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  stroke: none;
+  /* transition: all 4s forwards; */
+}
+/* .heart-main path{
+} */
+
+.heart-main:focus path {
+  fill:url(#gradient);
+  stroke:transparent;
+  animation: hard 0.9s ease-in-out ;
+}
+#gradient{
+  transition: all 5s ease-in;
+}
+
+
+.st0{
+  opacity: 0.4;
+  fill: url(#gradient);
+  stroke:rgb(0, 0, 3);
+  stroke-width: 0;
+}
+.heart-main:hover ~ .heart-background path {
+  animation: fade-animation 2s ease-in-out forwards;
+}
+@keyframes hard{
+0%{opacity: 0;}
+50%{opacity: 0.8;}
+100%{opacity: 1;}
+
+}
+
+
+
+// ************************************************** END SVG HEART
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // ************************************************************
 // FOOTER
@@ -388,41 +528,68 @@ li a {
 }
 
 .menu {
-
+border:solid red 4px;
+cursor: pointer;
   box-shadow: #00000018 1px 1px 2px 0;
   border-radius: 18px;
   padding: 0;
   height: 70px;
   max-width: 440px;
   margin: 15px;
-
   display: flex;
   justify-content: space-between;
-  overflow: hidden;
-
+   overflow: hidden;
+   transition: 0.5s ease;
  }
 
-.menu:hover > .menu__valid{
-  margin-left:0;
+.menu:hover > .menu__animation{
+  margin-right:-5px;
+}
+.menu:hover  .checkrotate{
+  transform:rotate(360deg);
+  
 }
 
+
+ .menu__animation {
+  margin-right:-62px;
+    display: flex;
+     overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    transition: all 2s ease;
+  }
 .menu__valid {
-  width: 50px;
-  height: 70px;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  font-size: 20px;
+  border:solid rgb(13, 233, 31) 3px;
+  width: 60px;
+  height: 66px;
   background-color: #99e2d0;
   border-radius:  0 18px 18px 0;
-  position: relative;
-   margin-left:-78px;
+  position: relative;  
+    transition: transform 2s;
 }
-
-.menu__animation {
-
+.menu__prix{
   display: flex;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  border:solid blue 2px;
+  align-items: center;
+  margin-left:10px;
 }
 
+
+// **** check icon ****
+
+
+.checkrotate{
+  color:blue;
+  transition: 1s ease;
+}
+
+
+// ********************* Menu text 
 .menu__group{
   padding:10px;
   overflow: hidden;
@@ -458,3 +625,9 @@ display: flex;
 justify-content: center;
 
 }
+
+
+
+
+
+
