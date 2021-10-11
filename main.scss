@@ -5,17 +5,12 @@ $couleurSecondary: #ff79da;
 $couleurtertiaire: #99e2d0;
 
 .sectionloader {
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
-   position: fixed;
+  position: fixed;
   background: rgb(147, 86, 220);
-  background: linear-gradient(
-    286deg,
-    rgba(147, 86, 220, 1) 0%,
-    rgba(255, 121, 218, 1) 51%,
-    rgba(153, 226, 208, 1) 99%
-  );
+  background: linear-gradient(286deg, rgba(147, 86, 220, 1) 0%, rgba(255, 121, 218, 1) 51%, rgba(153, 226, 208, 1) 99%);
   height: 100vh;
   width: 100%;
   z-index: 1;
@@ -32,84 +27,90 @@ $couleurtertiaire: #99e2d0;
   }
 }
 
-.chargement{
+.chargement {
   // border:solid rgb(222, 4, 230) 9px;
-  background: linear-gradient(to bottom, rgba(255, 61, 223, 0) 0%,rgba(0, 217, 255, 0.459) 100%);
-  filter:blur(1px);
-  width:220px;
-  height:220px;
-  border-radius: 50%;
-  position:relative;
-display:flex;
-align-items: center;
-  }
-  .chargement:after{
-    content:"";
+  background: linear-gradient(to bottom, rgba(255, 61, 223, 0) 0%, rgba(0, 217, 255, 0.459) 100%);
+  filter: blur(1px);
   width: 220px;
   height: 220px;
-  border:solid transparent 9px;
-position: absolute;
-top:-9px;
-left:-9px;
-right:-9px;
-bottom: -6px;
-border-radius: 180px;
-border-top-color: rgba(214, 7, 255, 0.233);
-filter: hue-rotate(250deg);
-animation: spinring 1s linear infinite  }
-
-@keyframes spinring {
-0% {transform: rotate(0deg);
-  
-filter:blur(1px)}
-100% {transform: rotate(360deg);
-  
-filter:blur(5px)}
-
-
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.chargement:after {
+  content: "";
+  width: 220px;
+  height: 220px;
+  border: solid transparent 9px;
+  position: absolute;
+  top: -9px;
+  left: -9px;
+  right: -9px;
+  bottom: -6px;
+  border-radius: 180px;
+  border-top-color: rgba(214, 7, 255, 0.233);
+  // filter: hue-rotate(250deg);
+  animation: spinring 1s linear infinite;
 }
 
+@keyframes spinring {
+  0% {
+    transform: rotate(0deg);
+filter:hue-rotate(250deg);
+    filter: blur(0.4px);
+  }
+  100% {
+    transform: rotate(360deg);
+filter:hue-rotate(110deg);
+    filter: blur(5px);
+  }
+}
 
 span {
   flex-wrap: wrap;
-  display:flex;
-  width:30px;
-height:30px;
-position:relative;}
+  display: flex;
+  width: 130px;
+  height: 230px;
+  position: relative;
+}
 
-span:before{
-  content:"";
-  position:absolute;
-  top:0;
-  left:0;
-  width:50%;
-  height:50%;
+span:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   opacity: 0.5;
-  background: rgb(147,86,220);
-background: radial-gradient(circle, rgba(147,86,220,1) 15%, rgba(247,105,208,1) 100%);
-  animation:charge 1s alternate infinite;
+  background: rgb(147, 86, 220);
+  background: radial-gradient(circle, rgba(147, 86, 220, 1) 15%, rgba(247, 105, 208, 1) 100%);
+  animation: charge 1s alternate infinite;
 }
 
 @keyframes charge {
-  0% {width:100%;
-  height:100%;
+  0% {
+    transform: rotate(0deg);
+    width: 100%;
+    height: 100%;
   }
-  100% {width:0;
-  height:0;}
+  100% {transform: rotate(360deg);
+    width: 0;
+    height: 100%;
+  }
 }
-.s4:before, .s5:before, .s2:before{
+.s4:before,
+.s5:before,
+.s2:before {
   animation-delay: 0.1s;
   background-color: $couleurtertiaire;
 }
-.s9:before, .s7:before, s3:before{
+.s9:before,
+.s7:before,
+s3:before {
   animation-delay: 0.5s;
-background-color: $couleurPrimary;
+  background-color: $couleurPrimary;
 }
-
-
-
-
-
 
 * {
   box-sizing: border-box;
@@ -120,10 +121,10 @@ background-color: $couleurPrimary;
 }
 
 body {
-  background:#f6f6f6;
+  background: #f6f6f6;
 
   box-sizing: border-box;
-   font-family: 'roboto';
+  font-family: "roboto";
 }
 // .background__princial{
 //   background: green;
@@ -131,40 +132,23 @@ body {
 // .background__second{
 //   background: #f6f6f6f6;
 // }
-.lien{
-  color:black;
+.lien {
+  color: black;
 }
 .icontest {
-  fill:#9356dc;
-  stroke:black;
+  fill: #9356dc;
+  stroke: black;
   width: 50%;
 }
 
-
-
-
-
 h1 {
-    font-family: "shrikhand";
+  font-family: "shrikhand";
 }
 
 // **************************************
 // Layout GRID
 // *************************************
-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(4, minmax(210px auto));
-  grid-template-areas:
-    "a "
-    "a "
-    "b "
-    "c "
-    "d "
-    "e ";
-  gap: 10px;
-  height: 100vh;
-}
+
 // Ligne sous logo
 hr {
   height: 7px;
@@ -173,8 +157,6 @@ hr {
   z-index: 2;
 }
 .header {
-  grid-area: a;
-
   &__logo {
     display: flex;
     justify-content: center;
@@ -191,9 +173,8 @@ hr {
 .geo {
   display: flex;
   justify-content: center;
-   background-color:#eaeaea;
-   padding: 13px 52px 13px 26px;
-
+  background-color: #eaeaea;
+  padding: 13px 52px 13px 26px;
 
   &__icon {
     color: rgb(5, 5, 5);
@@ -202,29 +183,23 @@ hr {
     font-size: 16px;
   }
   &__city input {
-    text-align:center ;
+    text-align: center;
     border: transparent;
-    background-color:#eaeaea;
+    background-color: #eaeaea;
     width: 110px;
-
   }
 }
-input::placeholder{
+input::placeholder {
   font-weight: 600;
   color: black;
-  font-family: 'roboto';
+  font-family: "roboto";
   font-size: 16px;
-
 }
 
 // Description du restaurant
 
-
 .home {
   background-color: #f6f6f6;
-  grid-area: b;
-  display: grid;
-  align-content: center;
 
   &__h1 {
     text-align: center;
@@ -240,114 +215,107 @@ input::placeholder{
     margin-bottom: 15px;
   }
   &__btn button {
-    
-background: linear-gradient(356deg, rgb(146, 86, 220) 3%, rgba(255,121,218,1) 80%);
+    background: linear-gradient(356deg, rgb(146, 86, 220) 3%, rgba(255, 121, 218, 1) 80%);
 
     color: white;
     border-radius: 35px;
 
     text-align: center;
-    
+
     border: none;
     font-size: 14px;
-    padding:16px;
-
+    padding: 16px;
   }
 }
 
 // ************************************************************************************
 // FEATURE //FONCTIONNEMENT
 // *****************************************************************************************
-
-.feature {
-&
-.feature__titre{
-  margin-left: 18px;
-  margin-bottom: 37px;
-  margin-top: 74px;
-  width: 85%;
-  display: flex;
-  justify-content: left;
+.feat__bloc{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 800px;
+  border:solid green 5px;
 }
-
-
-
-
-  grid-area: c;
-  .fcontain {
+.fcontain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(255, 255, 255);
+  padding: 20px;
+  & .feat:hover {
+    background-color: rgba(255, 0, 212, 0.178);
+  }
+  & .feature__titre {
+    margin-bottom: 37px;
+    margin-top: 74px;
+    width: 85%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: rgb(255, 255, 255);
-    
-    
-    .feat {
-      display: flex;
-      justify-content: start;
-      align-items: center;
-      margin-bottom: 30px;
-      box-shadow: 6px 0px 9px 0px rgba(0, 0, 0, 0.1);
-      padding: 20px;
-      border-radius: 20px;
-      width: 328px;
-      background-color:#f6f6f6;
+    justify-content: left;
+    align-self: start;
+  }
 
-      &__rank {
-        position: relative;
-        color: white;
-        width: 23px;
-        height: 23px;
-        background-color: $couleurPrimary;
-        border: solid 2px $couleurPrimary;
-        text-align: center;
-        border-radius: 24px;
-        font-size: 14px;
-        font-weight:550;
+  .feat {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 30px;
+    box-shadow: 6px 0px 9px 0px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 20px;
+    width: 328px;
+    background-color: #f6f6f6;
+
+    &__rank {
+      position: relative;
+      color: white;
+      width: 23px;
+      height: 23px;
+      background-color: $couleurPrimary;
+      border: solid 2px $couleurPrimary;
+      text-align: center;
+      border-radius: 24px;
+      font-size: 14px;
+      font-weight: 550;
       display: flex;
       justify-content: center;
       align-items: center;
-        transform: translate(-25px, 0px);
-      }
-      &__logo {
-        font-size: 19px;
-        color:rgba(0, 0, 0, 0.575);
-        margin-right: 10px;
-        margin-left: -15px;
-        // border:solid green 4px;
-        width: 35px;
-        text-align: center;
-      }
-      &__text {
-        font-size: 17px;
-        display: flex;
-        justify-content: center;
-      }
+      transform: translate(-25px, 0px);
+    }
+    &__logo {
+      font-size: 19px;
+      color: rgba(0, 0, 0, 0.575);
+      margin-right: 10px;
+      margin-left: -15px;
+      // border:solid green 4px;
+      width: 35px;
+      text-align: center;
+    }
+    &__text {
+      font-size: 17px;
+      display: flex;
+      justify-content: center;
     }
   }
 }
 
-
-
-.fcontain{
-  & .feat:hover{
-    background-color:rgba(255, 0, 212, 0.178);
-  }
-}
 // ********************************************************************************
 // RESTAURANT & carte
 // *********************************************************************************
 .section {
-
-  grid-area:d;
-
+  padding:20px;
   .restaurant {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
-    
-
-   & .carte{
-      background-color:white;
+    .flex1 {
+      margin: 20px;
+      flex-basis: 400px;
+      flex-grow: 1;
+    }
+    & .carte {
+      background-color: white;
       margin-bottom: 16px;
       width: 350px;
       border-radius: 15px;
@@ -358,7 +326,7 @@ background: linear-gradient(356deg, rgb(146, 86, 220) 3%, rgba(255,121,218,1) 80
         width: 100%;
         object-fit: cover;
         height: 170px;
-        
+
         // position: absolute;
       }
       &__name {
@@ -375,53 +343,47 @@ background: linear-gradient(356deg, rgb(146, 86, 220) 3%, rgba(255,121,218,1) 80
     }
   }
 }
-.carte1{
- 
+
+
+.carte1 {
   margin-bottom: 16px;
-  width: 350px;
+  
   border-radius: 15px;
-  border:solid 1px #d9dade;
+  border: solid 1px #d9dade;
   box-shadow:
   //  rgba(0, 0, 0, 0.445) 2px 2px 15px 2px;
-   9.91px 9.91px 15px #D9DADE,
-   -9.91px -9.91px 15px #FFFFFF;
-   background: linear-gradient(145deg, #e6e6e6, #ffffff);
-   
+    9.91px 9.91px 15px #d9dade, -9.91px -9.91px 15px #ffffff;
+  background: linear-gradient(145deg, #e6e6e6, #ffffff);
 }
 
-.carte1:hover{
+.carte1:hover {
   box-shadow:
   //  rgba(0, 0, 0, 0.445) 2px 2px 15px 2px;
-  inset 29.91px 9.91px 15px #D9DADE,
-  inset -9.91px -9.91px 15px #FFFFFF;
+    inset 29.91px 9.91px 15px #d9dade, inset -9.91px -9.91px 15px #ffffff;
   transform: translateY(0.25em);
 }
 
-
-
-.carte2{
-  background-color:white;
+.carte2 {
+  background-color: white;
   margin-bottom: 16px;
-  width: 350px;
-  border-radius: 15px;
-  box-shadow: rgba(0, 0, 0, 0.445) 2px 2px 15px 2px;}
-.carte3{
   
-  background-color:white;
-  margin-bottom: 16px;
-  width: 350px;
   border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.445) 2px 2px 15px 2px;
 }
-.carte4{
- 
-  background-color:white;
+.carte3 {
+  background-color: white;
   margin-bottom: 16px;
-  width: 350px;
+  
   border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.445) 2px 2px 15px 2px;
 }
-
+.carte4 {
+  background-color: white;
+  margin-bottom: 16px;
+  
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.445) 2px 2px 15px 2px;
+}
 
 // ****************************
 // position rel /abs img
@@ -430,11 +392,10 @@ background: linear-gradient(356deg, rgb(146, 86, 220) 3%, rgba(255,121,218,1) 80
   background-color: #99e2d0;
   border: none;
   font-size: 14px;
-  padding:6px;
-  margin-top:15px;
+  padding: 6px;
+  margin-top: 15px;
   position: absolute;
-  right:52px;
-
+  right: 52px;
 }
 // FAVORITE HEART ICON
 .carte__header {
@@ -453,12 +414,10 @@ background: linear-gradient(356deg, rgb(146, 86, 220) 3%, rgba(255,121,218,1) 80
 
 // ****************************************************** SVG HEART
 
-
-
 .iconsv {
   fill: transparent;
-  margin-right:10px;
-  stroke:black;
+  margin-right: 10px;
+  stroke: black;
   stroke-width: 3;
   cursor: pointer;
   position: relative;
@@ -488,47 +447,36 @@ path {
 } */
 
 .heart-main:focus path {
-  fill:url(#gradient);
-  stroke:transparent;
-  animation: hard 0.9s ease-in-out ;
+  fill: url(#gradient);
+  stroke: transparent;
+  animation: hard 0.9s ease-in-out;
 }
-#gradient{
+#gradient {
   transition: all 5s ease-in;
 }
 
-
-.st0{
+.st0 {
   opacity: 0.4;
   fill: url(#gradient);
-  stroke:rgb(0, 0, 3);
+  stroke: rgb(0, 0, 3);
   stroke-width: 0;
 }
 .heart-main:hover ~ .heart-background path {
   animation: fade-animation 2s ease-in-out forwards;
 }
-@keyframes hard{
-0%{opacity: 0;}
-50%{opacity: 0.8;}
-100%{opacity: 1;}
-
+@keyframes hard {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-
-
 // ************************************************** END SVG HEART
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // ************************************************************
 // FOOTER
@@ -590,7 +538,6 @@ li a {
 }
 
 .alacarte__name {
-
   padding: 25px;
   position: relative;
   color: black;
@@ -610,8 +557,8 @@ li a {
 }
 
 .menu {
-border:solid red 4px;
-cursor: pointer;
+  border: solid red 4px;
+  cursor: pointer;
   box-shadow: #00000018 1px 1px 2px 0;
   border-radius: 18px;
   padding: 0;
@@ -620,74 +567,68 @@ cursor: pointer;
   margin: 15px;
   display: flex;
   justify-content: space-between;
-   overflow: hidden;
-   transition: 0.5s ease;
- }
-
-.menu:hover > .menu__animation{
-  margin-right:-5px;
-}
-.menu:hover  .checkrotate{
-  transform:rotate(360deg);
-  
+  overflow: hidden;
+  transition: 0.5s ease;
 }
 
+.menu:hover > .menu__animation {
+  margin-right: -5px;
+}
+.menu:hover .checkrotate {
+  transform: rotate(360deg);
+}
 
- .menu__animation {
-  margin-right:-62px;
-    display: flex;
-     overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    transition: all 2s ease;
-  }
+.menu__animation {
+  margin-right: -62px;
+  display: flex;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transition: all 2s ease;
+}
 .menu__valid {
-  display:flex;
-  align-items:center;
+  display: flex;
+  align-items: center;
   justify-content: center;
   font-size: 20px;
-  border:solid rgb(13, 233, 31) 3px;
+  border: solid rgb(13, 233, 31) 3px;
   width: 60px;
   height: 66px;
   background-color: #99e2d0;
-  border-radius:  0 18px 18px 0;
-  position: relative;  
-    transition: transform 2s;
+  border-radius: 0 18px 18px 0;
+  position: relative;
+  transition: transform 2s;
 }
-.menu__prix{
+.menu__prix {
   display: flex;
-  border:solid blue 2px;
+  border: solid blue 2px;
   align-items: center;
-  margin-left:10px;
+  margin-left: 10px;
 }
-
 
 // **** check icon ****
 
-
-.checkrotate{
-  color:blue;
+.checkrotate {
+  color: blue;
   transition: 1s ease;
 }
 
-
-// ********************* Menu text 
-.menu__group{
-  padding:10px;
+// ********************* Menu text
+.menu__group {
+  padding: 10px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.menu__name{
+.menu__name {
   font-weight: 620;
   font-size: 21px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   line-height: 30px;
-
 }
-.menu__subname{
+.menu__subname {
   font-weight: 150;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -696,31 +637,23 @@ cursor: pointer;
 
 // BUTTON COMMANDe
 
-.commander{
+.commander {
   background: linear-gradient($couleurSecondary, $couleurPrimary);
   color: white;
   border-radius: 35px;
   padding: 10px;
   text-align: center;
   border: none;
-display: flex;
-justify-content: center;
-
+  display: flex;
+  justify-content: center;
 }
 
-
-
-
-// @media (min-width:1042px) {
-// contener{display:flex;}
-//   .restaurant{
-//     display:flex;
-//     flex-direction: row;
-//     background-color: pink; }
-// .footer__contenu{
-//   display: flex;
-//   justify-content: center;
-//   align-content: center;
-// }
-
-// }
+@media screen and  (min-width:720px){ 
+  .section{
+    .restaurant{
+      .flex1 {
+        flex-basis: 450px;
+      }
+    }
+  }
+}
