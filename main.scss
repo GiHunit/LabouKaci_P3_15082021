@@ -19,18 +19,18 @@ $couleurtertiaire: #99e2d0;
   height: 100vh;
   width: 100%;
   z-index: 1;
-  animation: pagetransition 5s forwards;
+  animation: pagetransition 7s forwards;
 }
-// @keyframes pagetransition {
-//   0% {
-//     opacity: 1;
-//   }
-//   100% {
-//     opacity: 0;
-//     z-index: -1;
-//     display: none;
-//   }
-// }
+@keyframes pagetransition {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+    display: none;
+  }
+}
 
 .chargement{
   // border:solid rgb(222, 4, 230) 9px;
