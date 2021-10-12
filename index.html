@@ -12,14 +12,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="css/main.css">
     <title>OhmyFood</title>
+
+
 </head>
 
 <body class="background__second">
@@ -62,8 +61,8 @@ LOADER TRANSITION PAGES TO HOME
             <span class="s1"></span>
             <span class="s2"></span>
             <span class="s3"></span>
-         
-            
+
+
         </div>
     </div>
 
@@ -111,52 +110,52 @@ FEATURE
 
 
 
-   
 
-            <div class="fcontain">
-                <div class="feature__titre">
-                    <h2>
-                        Fonctionnement
-                    </h2>
+
+        <div class="fcontain">
+            <div class="feature__titre">
+                <h2>
+                    Fonctionnement
+                </h2>
+            </div>
+
+            <div class="feat__bloc">
+
+                <div class="feat click">
+                    <div class="feat__rank">1</div>
+                    <div class="feat__logo"><i class="fas fa-mobile-alt"></i></div>
+                    <div class="feat__text">Choisissez un restaurant</div>
                 </div>
-
-<div class="feat__bloc">
-
-    <div class="feat click">
-        <div class="feat__rank">1</div>
-        <div class="feat__logo"><i class="fas fa-mobile-alt"></i></div>
-        <div class="feat__text">Choisissez un restaurant</div>
-    </div>
-    <div class="feat click">
-        <div class="feat__rank">2</div>
-        <div class="feat__logo"><i class="fas fa-list-ul"></i></div>
-        <div class="feat__text">Composez votre menu</div>
-    </div>
+                <div class="feat click">
+                    <div class="feat__rank">2</div>
+                    <div class="feat__logo"><i class="fas fa-list-ul"></i></div>
+                    <div class="feat__text">Composez votre menu</div>
+                </div>
                 <div class="feat click">
                     <div class="feat__rank">3</div>
                     <div class="feat__logo"><i class="fas fa-store"></i></div>
                     <div class="feat__text">Dégustez au restaurant</div>
                 </div>
-                
-                
+
+
             </div>
-            
+
         </div>
-            <!-- 
+        <!-- 
                 ************************************************
 RESTAURANT
 ********************************************** -->
 
-<section class="section">
-    <h2> Restaurant</h2>
-    
+        <section class="section">
+            <h2> Restaurant</h2>
+
 
 
             <div class="restaurant">
 
-
+<!-- *************** carte I -->
                 <div class="carte1 flex1">
-                    <a class="lien" href="lapalette.html" tabindex="1">
+                    <a class="lien" href="lapalette.html" tabindex="0">
 
 
                         <div class="carte__photo">
@@ -165,6 +164,8 @@ RESTAURANT
                             </button>
                             <img src="Maquettes Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg">
                         </div>
+
+
                         <div class="carte__header">
                             <div class="carte__bloc">
                                 <div class="carte__name">
@@ -174,99 +175,181 @@ RESTAURANT
                                     Ménilmontant
                                 </div>
                             </div>
-                    </a>
+                        </a>
 
-                    <!-- **********heart************ -->
+                            <div class="carte__favorit">
+                                <div class="iconsv" id="shortcutsvg">
+                                    <svg id="shortcutsvg" class="heart-main" type="checkbox" tabindex="0"
+                                        viewBox="0 0 32 29.6" width="100" title="heart">
 
-                    <div class="carte__favorit">
-                        <div class="iconsv" id="shortcutsvg">
-                            <svg id="shortcutsvg" class="heart-main" type="checkbox" tabindex="0" viewBox="0 0 32 29.6"
-                                width="100" title="heart">
-                                <defs>
-                                    <linearGradient id="gradient" x1=0% y1="0%" x2="100%" y2="0%">
-                                        <stop offset="0%" style="stop-color: #686de0;stop-opacity:1"></stop>
-                                        <stop offset="100%" style="stop-color: #e056fd;stop-opacity:1"></stop>
-                                    </linearGradient>
-                                </defs>
-                                <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+                                        <defs>
+                                            <linearGradient id="gradient" x1=0% y1="0%" x2="100%" y2="0%">
+                                                <stop offset="0%" style="stop-color: #686de0;stop-opacity:1"></stop>
+                                                <stop offset="100%" style="stop-color: #e056fd;stop-opacity:1"></stop>
+                                            </linearGradient>
+                                        </defs>
+                                        <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
                                   c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z" />
-                            </svg>
-                            <svg class="heart-background" type="checkbox" viewBox="0 0 32 29.6" width="100"
-                                title="heart">
-                                <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+                                    </svg>
+                                    <svg class="heart-background" type="checkbox" viewBox="0 0 32 29.6" width="100"
+                                        title="heart">
+                                        <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
                                   c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z" />
-                            </svg>
+                                    </svg>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-
-
                 </div>
 
 
-            </div>
+
+<!-- *************************************** Carte II -->
+<div class="carte2 flex1">
+    <a class="lien" href="lanote.html" tabindex="1">
 
 
+        <div class="carte__photo">
+            <button class="nouveau">
+                <p>Nouveau</p>
+            </button>
+            <img src="Maquettes Ohmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg">
+        </div>
 
-            <div class="carte2 flex1">
-                <div class="carte__photo">
-                    <button class="nouveau">
-                        <p>Nouveau</p>
-                    </button>
-                    <a href="lanote.html">
 
-                        <img src="Maquettes Ohmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg">
-                    </a>
-                </div>
+        <div class="carte__header">
+            <div class="carte__bloc">
                 <div class="carte__name">
                     La note enchantée
                 </div>
                 <div class="carte__city">
                     Charonne
                 </div>
-
-
-
             </div>
+            
+        </a>
+            <div class="carte__favorit">
+                <div class="iconsv" id="shortcutsvg">
+                    <svg id="shortcutsvg" class="heart-main" type="checkbox" tabindex="0"
+                        viewBox="0 0 32 29.6" width="100" title="heart">
 
-
-
-
-
-
-
-            <div class="carte3 flex1">
-                <div class="carte__photo">
-                    <a href="alafrançaise.html">
-
-                        <img src="Maquettes Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg">
-                    </a>
+                        <defs>
+                            <linearGradient id="gradient" x1=0% y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color: #686de0;stop-opacity:1"></stop>
+                                <stop offset="100%" style="stop-color: #e056fd;stop-opacity:1"></stop>
+                            </linearGradient>
+                        </defs>
+                        <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+                  c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z" />
+                    </svg>
+                    <svg class="heart-background" type="checkbox" viewBox="0 0 32 29.6" width="100"
+                        title="heart">
+                        <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+                  c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z" />
+                    </svg>
                 </div>
+            </div>
+        </div>
+</div>
+
+
+<!-- ****************************************** Carte III  -->
+<div class="carte3 flex1">
+    <a class="lien" href="alafrançaise.html" tabindex="1">
+
+
+        <div class="carte__photo">
+            <!-- <button class="nouveau">
+                <p>Nouveau</p>
+            </button> -->
+            <img src="Maquettes Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg">
+        </div>
+
+
+        <div class="carte__header">
+            <div class="carte__bloc">
                 <div class="carte__name">
-                    A la francaise
+A la française
                 </div>
                 <div class="carte__city">
-                    Cité rouge </div>
-
-            </div>
-
-
-
-
-            <div class="carte4 flex1">
-                <div class="carte__photo">
-                    <a href="ledelice.html">
-
-                        <img src="Maquettes Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg">
-                    </a>
+                    cité Rouge
                 </div>
+            </div>
+        </a>
+
+            <div class="carte__favorit">
+                <div class="iconsv" id="shortcutsvg">
+                    <svg id="shortcutsvg" class="heart-main" type="checkbox" tabindex="0"
+                        viewBox="0 0 32 29.6" width="100" title="heart">
+
+                        <defs>
+                            <linearGradient id="gradient" x1=0% y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color: #686de0;stop-opacity:1"></stop>
+                                <stop offset="100%" style="stop-color: #e056fd;stop-opacity:1"></stop>
+                            </linearGradient>
+                        </defs>
+                        <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+                  c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z" />
+                    </svg>
+                    <svg class="heart-background" type="checkbox" viewBox="0 0 32 29.6" width="100"
+                        title="heart">
+                        <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+                  c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+</div>
+
+<!-- ******************************************* Carte iV -->
+<div class="carte4 flex1">
+    <a class="lien" href="ledelice.html" tabindex="1">
+
+
+        <div class="carte__photo">
+            <!-- <button class="nouveau">
+                <p>Nouveau</p>
+            </button> -->
+            <img src="Maquettes Ohmyfood/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg">
+        </div>
+
+
+        <div class="carte__header">
+            <div class="carte__bloc">
                 <div class="carte__name">
-                    Le délice des sens
-                </div>
+Le délice des sens             
+   </div>
                 <div class="carte__city">
-                    Folie-Mericourt
-                </div>
+Folie-Méricourt                </div>
             </div>
 
+            
+            
+        </a>
+            <div class="carte__favorit">
+                <div class="iconsv" id="shortcutsvg">
+                    <svg id="shortcutsvg" class="heart-main" type="checkbox" tabindex="0"
+                        viewBox="0 0 32 29.6" width="100" title="heart">
+
+                        <defs>
+                            <linearGradient id="gradient" x1=0% y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color: #686de0;stop-opacity:1"></stop>
+                                <stop offset="100%" style="stop-color: #e056fd;stop-opacity:1"></stop>
+                            </linearGradient>
+                        </defs>
+                        <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+                  c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z" />
+                    </svg>
+                    <svg class="heart-background" type="checkbox" viewBox="0 0 32 29.6" width="100"
+                        title="heart">
+                        <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+                  c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+</div>
+
+              
 
         </section>
 
