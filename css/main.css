@@ -215,7 +215,6 @@ input::placeholder {
   flex-wrap: wrap;
   justify-content: space-around;
   max-width: 800px;
-  border: solid green 5px;
 }
 
 .fcontain {
@@ -620,6 +619,11 @@ li a {
 @media screen and (min-width: 720px) {
   .section .restaurant .flex1 {
     flex-basis: 450px;
+  }
+}
+@media screen and (min-width: 1628px) {
+  .section .restaurant .flex1 {
+    flex-basis: 600px;
   }
 }
 
