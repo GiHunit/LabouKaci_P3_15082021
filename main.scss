@@ -612,7 +612,7 @@ font-size: 22px;
   font-size: 20px;
   
   width: 60px;
-  height: 66px;
+  height: 72px;
   background-color: $couleurtertiaire;
   border-radius: 0 18px 18px 0;
   position: relative;
@@ -662,11 +662,18 @@ margin-right: 20px;
   background: linear-gradient($couleurSecondary, $couleurPrimary);
   color: white;
   border-radius: 35px;
-  padding: 10px;
+  padding: 20px;
   text-align: center;
   border: none;
   display: flex;
   justify-content: center;
+  
+}
+.ohmyorder{
+
+  display:flex;
+  justify-content: center;
+  margin-bottom: 15px;
 }
 
 @media screen and  (min-width:720px){ 
@@ -678,3 +685,6 @@ margin-right: 20px;
     }
   }
 }
+// @media screen and  (min-width:1081px{
+  
+// }
