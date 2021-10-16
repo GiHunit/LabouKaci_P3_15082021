@@ -9,7 +9,7 @@
   margin-top: -20px;
   width: 100%;
   z-index: 1;
-  animation: pagetransition 7s forwards;
+  animation: pagetransition 5s forwards;
 }
 
 @keyframes pagetransition {
@@ -195,6 +195,7 @@ input::placeholder {
   text-align: center;
   font-size: 16px;
   margin-bottom: 45px;
+  margin-top: -15px;
 }
 .home__btn {
   text-align: center;
@@ -320,6 +321,7 @@ input::placeholder {
   border: solid 1px #d9dade;
   box-shadow: 9.91px 9.91px 15px #d9dade, -9.91px -9.91px 15px #ffffff;
   background: linear-gradient(145deg, #e6e6e6, #ffffff);
+  position: relative;
 }
 
 .carte1:hover {
@@ -506,6 +508,32 @@ li a {
   border-radius: 25px 25px 0 0;
 }
 
+.delayentree {
+  animation: appearance 0.8s ease-out;
+}
+
+.delayplats {
+  animation: appearance 1.2s ease-out;
+}
+
+.delaydessert {
+  animation: appearance 1.5s ease-out;
+}
+
+@keyframes appearance {
+  0% {
+    opacity: 0;
+    transfom: translatey(-250px);
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
 .direction__column {
   display: flex;
   flex-direction: column;
@@ -514,6 +542,9 @@ li a {
 .plats__intro {
   margin: 15px;
   font-weight: 100;
+  border-bottom: solid #037699 4px;
+  width: 45px;
+  height: 35px;
 }
 
 .menu {
@@ -624,6 +655,13 @@ li a {
 @media screen and (min-width: 1628px) {
   .section .restaurant .flex1 {
     flex-basis: 600px;
+  }
+}
+@media screen and (min-width: 1628px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: solid red 10px;
   }
 }
 
