@@ -4,6 +4,13 @@ $couleurPrimary: #9356dc;
 $couleurSecondary: #ff79da;
 $couleurTertiaire: #99e2d0;
 
+%bradius{
+  border-radius: 20px;
+}
+
+
+
+
 
 .sectionloader {
   display: flex;
@@ -130,14 +137,8 @@ body {
 
   box-sizing: border-box;
   font-family: "roboto";
-//   padding-right:250px;
-// padding-left: 250px;
-
-
 }
-// .background__princial{
-//   background: green;
-// }
+
 .background__second{
   background: #f6f6f6f6;
 }
@@ -233,9 +234,7 @@ input::placeholder {
 
     color: white;
     border-radius: 35px;
-
     text-align: center;
-
     border: none;
     font-size: 14px;
     padding: 16px;
@@ -358,7 +357,6 @@ input::placeholder {
   }
 }
 
-
 .carte1 {
   margin-bottom: 16px;
   border-radius: 15px;
@@ -376,27 +374,6 @@ input::placeholder {
     inset 29.91px 9.91px 15px #d9dade, inset -9.91px -9.91px 15px #ffffff;
   transform: translateY(0.25em);
 }
-
-// .carte2 {
-//   background-color: white;
-//   margin-bottom: 16px;
-//   border-radius: 15px;
-//   box-shadow: rgba(0, 0, 0, 0.445) 2px 2px 15px 2px;
-// }
-// .carte3 {
-//   background-color: white;
-//   margin-bottom: 16px;
-
-//   border-radius: 15px;
-//   box-shadow: rgba(0, 0, 0, 0.445) 2px 2px 15px 2px;
-// }
-// .carte4 {
-//   background-color: white;
-//   margin-bottom: 16px;
-
-//   border-radius: 15px;
-//   box-shadow: rgba(0, 0, 0, 0.445) 2px 2px 15px 2px;
-// }
 
 // ****************************
 // position rel /abs img
@@ -604,7 +581,7 @@ animation: remp 0.5s ease-in;
   100%{opacity:1};
 }
 
-
+// ************* Coeur ok mais w3 validator : avertissement **********
 // .carte__coeur i:hover{
 //    font-weight: 600;
 //    background: -webkit-linear-gradient($couleurSecondary,$couleurPrimary);
@@ -613,10 +590,6 @@ animation: remp 0.5s ease-in;
 //  background-clip: text;
   
 // }
-
-
-
-
 
 .delayentree{
 animation: appearance 0.8s ease-out;
@@ -778,6 +751,16 @@ margin-right: 20px;
     }
   }
 }
+@media screen and (min-width:1255px){
+  .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:5px;
+    
+  }
+  
+}
+
 @media screen and (min-width:1628px) {
   .section{
     .restaurant{
@@ -786,13 +769,4 @@ margin-right: 20px;
       }
     }
   }
-}
-  @media screen and (min-width:1255px){
-  .grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap:5px;
-
-  }
-
 }

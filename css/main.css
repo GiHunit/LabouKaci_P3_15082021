@@ -658,16 +658,16 @@ li a {
     flex-basis: 450px;
   }
 }
-@media screen and (min-width: 1628px) {
-  .section .restaurant .flex1 {
-    flex-basis: 600px;
-  }
-}
 @media screen and (min-width: 1255px) {
   .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 5px;
+  }
+}
+@media screen and (min-width: 1628px) {
+  .section .restaurant .flex1 {
+    flex-basis: 600px;
   }
 }
 
