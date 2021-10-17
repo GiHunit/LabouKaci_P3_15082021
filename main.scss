@@ -7,8 +7,18 @@ $couleurTertiaire: #99e2d0;
 %bradius{
   border-radius: 20px;
 }
-
-
+@mixin mauto {
+  margin: { 
+      left: auto;
+      right: auto;
+  }
+}
+@mixin testvisual{
+  border:solid 4px crimson;
+}
+@mixin testbackground{
+  background: grey;
+}
 
 
 
