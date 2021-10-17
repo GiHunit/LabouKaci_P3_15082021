@@ -457,7 +457,7 @@ i fas fa-ustensils p {
 .label img {
   font-size: 25px;
   width: 200px;
-  background-image: cover;
+  object-fit: cover;
   background-position: bottom;
 }
 
@@ -505,7 +505,7 @@ i fas fa-ustensils p {
 @keyframes appearance {
   0% {
     opacity: 0;
-    transfom: translatey(-250px);
+    transform: translatey(-250px);
   }
   50% {
     opacity: 0;
