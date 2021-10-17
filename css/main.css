@@ -421,7 +421,7 @@ path {
   }
 }
 .footer__contenu {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -616,11 +616,15 @@ i fas fa-ustensils p {
   background: linear-gradient(#ff79da, #9356dc);
   color: white;
   border-radius: 35px;
-  padding: 20px;
-  text-align: center;
+  padding: 15px;
+  width: 180px;
+  margin-bottom: 15px;
   border: none;
   display: flex;
   justify-content: center;
+}
+.commander:hover {
+  transform: scale(0.9);
 }
 
 .ohmyorder {

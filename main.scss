@@ -500,7 +500,7 @@ path {
 
 
 .footer__contenu {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -707,13 +707,17 @@ margin-right: 20px;
   background: linear-gradient($couleurSecondary, $couleurPrimary);
   color: white;
   border-radius: 35px;
-  padding: 20px;
-  text-align: center;
+  padding: 15px;
+  width: 180px;
+  margin-bottom: 15px;
   border: none;
   display: flex;
   justify-content: center;
-  
+  &:hover{
+    transform: scale(0.9);
+  }
 }
+
 .ohmyorder{
 
   display:flex;
