@@ -61,7 +61,7 @@
   }
 }
 span {
-  width: 130px;
+  width: 30px;
   height: 230px;
   position: relative;
   bottom: -100px;
@@ -72,8 +72,8 @@ span:before {
   position: absolute;
   top: 0;
   left: 0;
-  width: 50px;
-  height: 100px;
+  width: 5px;
+  height: 10px;
   background: #9356dc;
   background: radial-gradient(circle, #9356dc 15%, #f769d0 100%);
   animation: charge 1s alternate infinite;
@@ -102,7 +102,7 @@ span:before {
 .s7:before,
 s3:before {
   animation-delay: 0.5s;
-  background-color: #9356dc;
+  background-color: #99e2d0;
 }
 
 * {
@@ -329,27 +329,6 @@ input::placeholder {
   transform: translateY(0.25em);
 }
 
-.carte2 {
-  background-color: white;
-  margin-bottom: 16px;
-  border-radius: 15px;
-  box-shadow: rgba(0, 0, 0, 0.445) 2px 2px 15px 2px;
-}
-
-.carte3 {
-  background-color: white;
-  margin-bottom: 16px;
-  border-radius: 15px;
-  box-shadow: rgba(0, 0, 0, 0.445) 2px 2px 15px 2px;
-}
-
-.carte4 {
-  background-color: white;
-  margin-bottom: 16px;
-  border-radius: 15px;
-  box-shadow: rgba(0, 0, 0, 0.445) 2px 2px 15px 2px;
-}
-
 .nouveau {
   background-color: #99e2d0;
   border: none;
@@ -410,7 +389,7 @@ path {
 /* .heart-main path{
 } */
 .heart-main:focus path {
-  fill: url(.gradient);
+  fill: url(#gradient);
   stroke: transparent;
   animation: hard 0.9s ease-in-out;
 }
@@ -421,7 +400,7 @@ path {
 
 .st0 {
   opacity: 0.4;
-  fill: url(.gradient);
+  fill: url(#gradient);
   stroke: #000003;
   stroke-width: 0;
 }
@@ -442,6 +421,7 @@ path {
   }
 }
 .footer__contenu {
+  height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -487,6 +467,7 @@ i fas fa-ustensils p {
   right: 90px;
   display: flex;
   align-self: center;
+  margin-left: 15px;
   font-size: 22px;
 }
 
@@ -561,7 +542,7 @@ i fas fa-ustensils p {
   display: flex;
   justify-content: space-between;
   overflow: hidden;
-  transition: 0.5s ease;
+  transition: 400ms ease;
 }
 
 .menu:hover > .menu__animation {
@@ -578,7 +559,7 @@ i fas fa-ustensils p {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  transition: all 0.7s ease;
+  transition: all 0.3s ease;
 }
 
 .menu__valid {
@@ -591,7 +572,7 @@ i fas fa-ustensils p {
   background-color: #99e2d0;
   border-radius: 0 18px 18px 0;
   position: relative;
-  transition: transform 2s;
+  transition: transform 500ms ease-in;
 }
 
 .menu__prix {
@@ -605,7 +586,7 @@ i fas fa-ustensils p {
 
 .checkrotate {
   color: white;
-  transition: 2s ease;
+  transition: 800ms ease;
 }
 
 .menu__group {
