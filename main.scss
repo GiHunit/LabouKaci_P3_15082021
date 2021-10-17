@@ -462,17 +462,17 @@ path {
 } */
 
 .heart-main:focus path {
-  fill: url(#gradient);
+  fill: url(.gradient);
   stroke: transparent;
   animation: hard 0.9s ease-in-out;
 }
-#gradient {
+.gradient {
   transition: all 5s ease-in;
 }
 
 .st0 {
   opacity: 0.4;
-  fill: url(#gradient);
+  fill: url(.gradient);
   stroke: rgb(0, 0, 3);
   stroke-width: 0;
 }
@@ -509,6 +509,7 @@ path {
 .footer__logo {
   padding-bottom: 15px;
   margin-left: 27px;
+  margin-top:25px;
 }
 .footer__logo img {
   width: 135px;
@@ -519,14 +520,13 @@ li a {
   margin-left: 28px;
   display: flex;
 }
-
+i fas fa-ustensils p{
+  margin-left: 15px;
+}
 // .fas {
 //   margin-right: 10px;
 // }
 
-.footer__offre a:nth-child {
-  margin-left: 45px;
-}
 
 // *******************************************************************
 // ******************************************************************
@@ -609,7 +609,7 @@ font-size: 22px;
 .plats__intro {
   margin: 15px;
   font-weight: 100;
-  border-bottom:  solid rgb(3, 118, 153) 4px;
+  border-bottom:  solid $couleurtertiaire 4px;
   width: 45px;
   height: 35px;
 
@@ -644,7 +644,7 @@ font-size: 22px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  transition: all 2s ease;
+  transition: all 0.7s ease;
 }
 .menu__valid {
   display: flex;
@@ -717,7 +717,9 @@ margin-right: 20px;
   margin-bottom: 15px;
 }
 
+// *************************************************** RESPONSIVE SECTION ****************************************
 
+// ****************************************************************************************************************
 
 @media screen and  (min-width:720px){ 
   .section{
@@ -737,11 +739,12 @@ margin-right: 20px;
     }
   }
 }
-  @media screen and (min-width:1628px){
+  @media screen and (min-width:1255px){
   .grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    border:solid red 10px;
+    gap:5px;
+  
   }
   
 }
