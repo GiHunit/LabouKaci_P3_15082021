@@ -352,10 +352,6 @@ input::placeholder {
   align-self: center;
 }
 
-.carte__favorite i {
-  color: green;
-}
-
 .iconsv {
   fill: transparent;
   margin-right: 10px;
@@ -435,7 +431,12 @@ path {
 }
 
 .footer__logo img {
-  width: 135px;
+  object-fit: cover;
+  width: 100px;
+}
+
+.footer__offre p {
+  margin-left: 18px;
 }
 
 li a {
@@ -445,8 +446,8 @@ li a {
   display: flex;
 }
 
-i fas fa-ustensils p {
-  margin-left: 15px;
+.footer__partenaire p {
+  margin-left: 11px;
 }
 
 .label {
@@ -488,8 +489,27 @@ i fas fa-ustensils p {
   background-color: white;
   top: -20px;
   border-radius: 25px 25px 0 0;
+  display: flex;
+  justify-content: space-between;
 }
 
+.heart1-main:hover {
+  fill: url(#gradient1);
+  stroke: none;
+  animation: remp 0.5s ease-in;
+}
+
+@keyframes remp {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .delayentree {
   animation: appearance 0.8s ease-out;
 }
@@ -537,7 +557,7 @@ i fas fa-ustensils p {
   padding: 0;
   height: 70px;
   width: 95%;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 15px;
   display: flex;
   justify-content: space-between;
