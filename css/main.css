@@ -213,7 +213,6 @@ input::placeholder {
 .home__btn button:hover {
   cursor: pointer;
   background: linear-gradient(356deg, rgba(146, 86, 220, 0.63) 3%, rgba(255, 121, 217, 0.753) 80%);
-  -webkit-box-shadow: 5px 5px 17px 5px rgba(0, 0, 0, 0.45);
   box-shadow: 5px 5px 17px 5px rgba(0, 0, 0, 0.45);
 }
 
@@ -319,6 +318,10 @@ input::placeholder {
   margin-left: 15px;
   font-size: 18px;
   margin-bottom: 25px;
+}
+
+.section h2 {
+  margin-left: 15px;
 }
 
 .carte1 {
@@ -656,7 +659,6 @@ li a {
 }
 .commander:hover {
   cursor: pointer;
-  -webkit-box-shadow: 5px 5px 17px 5px rgba(0, 0, 0, 0.45);
   box-shadow: 5px 5px 17px 5px rgba(0, 0, 0, 0.45);
   background: linear-gradient(356deg, rgba(146, 86, 220, 0.63) 3%, rgba(255, 121, 217, 0.753) 80%);
 }

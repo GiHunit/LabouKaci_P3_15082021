@@ -252,8 +252,8 @@ input::placeholder {
   &__btn button:hover{
     cursor: pointer;
     background: linear-gradient(356deg, rgba(146, 86, 220, 0.63) 3%, rgba(255, 121, 217, 0.753) 80%);
-
-    -webkit-box-shadow: 5px 5px 17px 5px rgba(0,0,0,0.45); 
+// webkit non accepté sur css valid
+    // -webkit-box-shadow: 5px 5px 17px 5px rgba(0,0,0,0.45);    
     box-shadow: 5px 5px 17px 5px rgba(0,0,0,0.45);
   }
 }
@@ -373,7 +373,7 @@ input::placeholder {
     }
   }
 }
-
+.section h2{margin-left:15px;}
 .carte1 {
   margin-bottom: 16px;
   border-radius: 15px;
@@ -756,7 +756,8 @@ font-weight: bold;
 padding: 16px;
   &:hover{
     cursor: pointer;
-    -webkit-box-shadow: 5px 5px 17px 5px rgba(0,0,0,0.45); 
+    // webkit non accepté au valid css
+    // -webkit-box-shadow: 5px 5px 17px 5px rgba(0,0,0,0.45); 
 box-shadow: 5px 5px 17px 5px rgba(0,0,0,0.45);
 background: linear-gradient(356deg, rgba(146, 86, 220, 0.63) 3%, rgba(255, 121, 217, 0.753) 80%);
 
