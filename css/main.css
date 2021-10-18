@@ -210,6 +210,12 @@ input::placeholder {
   font-size: 14px;
   padding: 16px;
 }
+.home__btn button:hover {
+  cursor: pointer;
+  background: linear-gradient(356deg, rgba(146, 86, 220, 0.63) 3%, rgba(255, 121, 217, 0.753) 80%);
+  -webkit-box-shadow: 5px 5px 17px 5px rgba(0, 0, 0, 0.45);
+  box-shadow: 5px 5px 17px 5px rgba(0, 0, 0, 0.45);
+}
 
 .feat__bloc {
   display: flex;
@@ -659,16 +665,16 @@ li a {
     flex-basis: 450px;
   }
 }
+@media screen and (min-width: 1628px) {
+  .section .restaurant .flex1 {
+    flex-basis: 600px;
+  }
+}
 @media screen and (min-width: 1255px) {
   .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 5px;
-  }
-}
-@media screen and (min-width: 1628px) {
-  .section .restaurant .flex1 {
-    flex-basis: 600px;
   }
 }
 
