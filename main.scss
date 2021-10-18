@@ -742,16 +742,26 @@ margin-right: 20px;
 
 .commander {
   background: linear-gradient($couleurSecondary, $couleurPrimary);
-  color: white;
-  border-radius: 35px;
-  padding: 15px;
   width: 180px;
   margin-bottom: 15px;
-  border: none;
   display: flex;
   justify-content: center;
+background: linear-gradient(356deg, rgb(146, 86, 220) 3%, rgba(255, 121, 218, 1) 80%);
+color: white;
+border-radius: 35px;
+text-align: center;
+border: none;
+font-size: 14px;
+font-weight: bold;
+padding: 16px;
   &:hover{
-    transform: scale(0.9);
+    cursor: pointer;
+    -webkit-box-shadow: 5px 5px 17px 5px rgba(0,0,0,0.45); 
+box-shadow: 5px 5px 17px 5px rgba(0,0,0,0.45);
+background: linear-gradient(356deg, rgba(146, 86, 220, 0.63) 3%, rgba(255, 121, 217, 0.753) 80%);
+
+
+
   }
 }
 
