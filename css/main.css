@@ -430,13 +430,14 @@ path {
   margin-top: 25px;
 }
 
-.footer__logo img {
-  object-fit: cover;
-  width: 100px;
-}
-
 .footer__offre p {
   margin-left: 18px;
+}
+
+.footer__logo {
+  font-size: 18px;
+  font-family: "shrikhand";
+  color: white;
 }
 
 li a {
