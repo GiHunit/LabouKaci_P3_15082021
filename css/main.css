@@ -169,6 +169,7 @@ hr {
   display: flex;
   align-items: center;
   font-size: 16px;
+  margin-right: 10px;
 }
 .geo__city input {
   text-align: center;
