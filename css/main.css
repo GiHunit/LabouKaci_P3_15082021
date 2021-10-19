@@ -127,12 +127,6 @@ body {
   color: black;
 }
 
-.icontest {
-  fill: #9356dc;
-  stroke: black;
-  width: 50%;
-}
-
 h1 {
   font-family: "shrikhand";
 }
@@ -279,6 +273,7 @@ input::placeholder {
 }
 .fcontain .feat__text {
   font-size: 17px;
+  font-weight: bold;
   display: flex;
   justify-content: center;
 }
@@ -362,6 +357,10 @@ input::placeholder {
   align-self: center;
 }
 
+.carte__city {
+  font-weight: 200;
+}
+
 .iconsv {
   fill: transparent;
   margin-right: 10px;
@@ -375,6 +374,7 @@ input::placeholder {
   outline: none;
   overflow: visible;
   width: 30px;
+  margin-top: 10px;
 }
 
 path {
@@ -438,6 +438,8 @@ path {
   padding-bottom: 15px;
   margin-left: 27px;
   margin-top: 25px;
+  font-weight: 200;
+  margin-bottom: 0;
 }
 
 .footer__offre p {
@@ -502,6 +504,11 @@ li a {
   border-radius: 25px 25px 0 0;
   display: flex;
   justify-content: space-between;
+}
+
+.carte__name {
+  color: rgba(0, 0, 0, 0.979);
+  font-weight: 600;
 }
 
 .heart1-main:hover {
