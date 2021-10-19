@@ -164,8 +164,9 @@ body {
 //   width: 50%;
 // }
 
+// **** mixin font + color 
 h1 {
-  font-family: "shrikhand";
+ @include lestitle;
 }
 
 // **************************************
@@ -505,14 +506,16 @@ path {
   display: flex;
   flex-direction: column;
   background-color: $CouleurBackground;
+  
 }
-
+// ***** Mixin *****
 .footer__logo {
-  padding-bottom: 15px;
-  margin-left: 27px;
-  margin-top: 25px;
-  font-weight: 200;
-  margin-bottom: 0;
+  @include pied;
+  @include shri;
+  }
+.footer__logo1{
+@include pied;
+@include shri;
 }
 // .footer__logo svg {
 //   object-fit: cover;
@@ -521,11 +524,7 @@ path {
 .footer__offre p {
   margin-left: 18px;
 }
-.footer__logo  {
-  font-size: 18px;
-  font-family: "shrikhand";
-  color: white;
-}
+
 
 li a {
   padding-bottom: 7px;
@@ -580,15 +579,15 @@ li a {
 .alacarte__name {
   padding: 25px;
   position: relative;
-  color: black;
+  color: white;
   background-color: white;
   top: -20px;
   border-radius: 25px 25px 0 0;
   display: flex;
   justify-content: space-between;
+// @include shri ;
 }
 .carte__name {
-  // font-family: "shrikhand";
   color: rgba(0, 0, 0, 0.979);
 
   font-weight: 600;

@@ -4,4 +4,20 @@
 }
 @mixin shri {
   font-family: "shrikhand";
-color:red;}
+color:white;}
+@mixin shri1 {
+  font-family: "shrikhand";
+color:black;}
+
+@mixin pied{
+  padding-bottom: 15px;
+  margin-left: 27px;
+  margin-top: 25px;
+  font-weight: 200;
+  margin-bottom: 0;
+  font-size: 18px;
+}
+@mixin lestitle{
+  font-family: "shrikhand";
+  color:black;
+}

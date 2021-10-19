@@ -129,6 +129,7 @@ body {
 
 h1 {
   font-family: "shrikhand";
+  color: black;
 }
 
 hr {
@@ -440,16 +441,24 @@ path {
   margin-top: 25px;
   font-weight: 200;
   margin-bottom: 0;
+  font-size: 18px;
+  font-family: "shrikhand";
+  color: white;
+}
+
+.footer__logo1 {
+  padding-bottom: 15px;
+  margin-left: 27px;
+  margin-top: 25px;
+  font-weight: 200;
+  margin-bottom: 0;
+  font-size: 18px;
+  font-family: "shrikhand";
+  color: white;
 }
 
 .footer__offre p {
   margin-left: 18px;
-}
-
-.footer__logo {
-  font-size: 18px;
-  font-family: "shrikhand";
-  color: white;
 }
 
 li a {
@@ -498,7 +507,7 @@ li a {
 .alacarte__name {
   padding: 25px;
   position: relative;
-  color: black;
+  color: white;
   background-color: white;
   top: -20px;
   border-radius: 25px 25px 0 0;
