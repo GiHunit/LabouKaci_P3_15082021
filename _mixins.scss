@@ -19,5 +19,10 @@ color:black;}
 }
 @mixin lestitle{
   font-family: "shrikhand";
+  font-size:31px;
   color:black;
+}
+@mixin flexcenter{
+  display: flex;
+    justify-content: center;
 }
